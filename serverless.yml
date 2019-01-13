@@ -1,0 +1,25 @@
+service: gh2tg
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+  stage: production
+  region: ap-northeast-2
+  memorySize: 128
+
+  environment:
+    GH2TG_SECRET: ${env:GH2TG_SECRET}
+    GH2TG_TG_TOKEN: ${env:GH2TG_TG_TOKEN}
+    GH2TG_TG_CHATID: ${env:GH2TG_TG_CHATID}
+
+plugins:
+  - serverless-dotenv-plugin
+
+functions:
+  push:
+    handler: handler.push
+    events:
+      - http:
+          path: push
+          method: post

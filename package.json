@@ -1,0 +1,12 @@
+{
+  "name": "gh2tg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^2.0.1"
+  }
+}
