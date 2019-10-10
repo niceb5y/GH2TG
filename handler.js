@@ -11,7 +11,8 @@ const sendTelegramMessage = async text => {
   return axios.post(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
     chat_id: tgChatId,
     text: text,
-    parse_mode: 'Markdown'
+    parse_mode: 'Markdown',
+    disable_web_page_preview: true
   })
 }
 
