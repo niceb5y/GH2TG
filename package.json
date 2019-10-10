@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.19.0"
   },
   "devDependencies": {
-    "serverless-dotenv-plugin": "^2.0.1"
+    "serverless-dotenv-plugin": "^2.1.1"
   }
 }
