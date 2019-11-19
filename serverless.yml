@@ -2,7 +2,7 @@ service: gh2tg
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
 
   stage: production
   region: ap-northeast-2
